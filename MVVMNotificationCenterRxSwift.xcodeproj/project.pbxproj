@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		AB01FAB9261D8DF10005C204 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01FAB8261D8DF10005C204 /* AppDelegate.swift */; };
 		AB01FABB261D8DF10005C204 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01FABA261D8DF10005C204 /* SceneDelegate.swift */; };
-		AB01FABD261D8DF10005C204 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01FABC261D8DF10005C204 /* ViewController.swift */; };
-		AB01FAC0261D8DF10005C204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB01FABE261D8DF10005C204 /* Main.storyboard */; };
+		AB01FABD261D8DF10005C204 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01FABC261D8DF10005C204 /* NotificationCenterViewController.swift */; };
+		AB01FAC0261D8DF10005C204 /* NotificationCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB01FABE261D8DF10005C204 /* NotificationCenter.storyboard */; };
 		AB01FAC2261D8DF70005C204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB01FAC1261D8DF70005C204 /* Assets.xcassets */; };
 		AB01FAC5261D8DF70005C204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB01FAC3261D8DF70005C204 /* LaunchScreen.storyboard */; };
+		AB01FACF261D95C10005C204 /* Top.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB01FACE261D95C10005C204 /* Top.storyboard */; };
+		AB01FAD2261D95DC0005C204 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01FAD1261D95DC0005C204 /* TopViewController.swift */; };
+		AB01FAD5261D96D70005C204 /* RxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01FAD4261D96D70005C204 /* RxSwiftViewController.swift */; };
+		AB01FAD9261D96ED0005C204 /* RxSwift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB01FAD8261D96ED0005C204 /* RxSwift.storyboard */; };
+		AB01FAE1261D9B0C0005C204 /* NotificationCenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01FAE0261D9B0C0005C204 /* NotificationCenterViewModel.swift */; };
+		AB01FAE4261D9D610005C204 /* NotificationCenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01FAE3261D9D610005C204 /* NotificationCenterModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB01FAB5261D8DF10005C204 /* MVVMNotificationCenterRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMNotificationCenterRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB01FAB8261D8DF10005C204 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB01FABA261D8DF10005C204 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB01FABC261D8DF10005C204 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AB01FABF261D8DF10005C204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB01FABC261D8DF10005C204 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
+		AB01FABF261D8DF10005C204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NotificationCenter.storyboard; sourceTree = "<group>"; };
 		AB01FAC1261D8DF70005C204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB01FAC4261D8DF70005C204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB01FAC6261D8DF70005C204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB01FACE261D95C10005C204 /* Top.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Top.storyboard; sourceTree = "<group>"; };
+		AB01FAD1261D95DC0005C204 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		AB01FAD4261D96D70005C204 /* RxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewController.swift; sourceTree = "<group>"; };
+		AB01FAD8261D96ED0005C204 /* RxSwift.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RxSwift.storyboard; sourceTree = "<group>"; };
+		AB01FAE0261D9B0C0005C204 /* NotificationCenterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewModel.swift; sourceTree = "<group>"; };
+		AB01FAE3261D9D610005C204 /* NotificationCenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,61 @@
 		AB01FAB7261D8DF10005C204 /* MVVMNotificationCenterRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AB01FAE6261D9D6D0005C204 /* Models */,
+				AB01FADE261D97990005C204 /* ViewModels */,
+				AB01FADD261D97950005C204 /* Views */,
 				AB01FAB8261D8DF10005C204 /* AppDelegate.swift */,
 				AB01FABA261D8DF10005C204 /* SceneDelegate.swift */,
-				AB01FABC261D8DF10005C204 /* ViewController.swift */,
-				AB01FABE261D8DF10005C204 /* Main.storyboard */,
 				AB01FAC1261D8DF70005C204 /* Assets.xcassets */,
 				AB01FAC3261D8DF70005C204 /* LaunchScreen.storyboard */,
 				AB01FAC6261D8DF70005C204 /* Info.plist */,
 			);
 			path = MVVMNotificationCenterRxSwift;
+			sourceTree = "<group>";
+		};
+		AB01FADB261D97860005C204 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AB01FACE261D95C10005C204 /* Top.storyboard */,
+				AB01FABE261D8DF10005C204 /* NotificationCenter.storyboard */,
+				AB01FAD8261D96ED0005C204 /* RxSwift.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AB01FADC261D978F0005C204 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB01FAD1261D95DC0005C204 /* TopViewController.swift */,
+				AB01FABC261D8DF10005C204 /* NotificationCenterViewController.swift */,
+				AB01FAD4261D96D70005C204 /* RxSwiftViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AB01FADD261D97950005C204 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB01FADC261D978F0005C204 /* ViewControllers */,
+				AB01FADB261D97860005C204 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB01FADE261D97990005C204 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AB01FAE0261D9B0C0005C204 /* NotificationCenterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AB01FAE6261D9D6D0005C204 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB01FAE3261D9D610005C204 /* NotificationCenterModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +182,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB01FACF261D95C10005C204 /* Top.storyboard in Resources */,
 				AB01FAC5261D8DF70005C204 /* LaunchScreen.storyboard in Resources */,
+				AB01FAD9261D96ED0005C204 /* RxSwift.storyboard in Resources */,
 				AB01FAC2261D8DF70005C204 /* Assets.xcassets in Resources */,
-				AB01FAC0261D8DF10005C204 /* Main.storyboard in Resources */,
+				AB01FAC0261D8DF10005C204 /* NotificationCenter.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB01FABD261D8DF10005C204 /* ViewController.swift in Sources */,
+				AB01FAE1261D9B0C0005C204 /* NotificationCenterViewModel.swift in Sources */,
+				AB01FAD2261D95DC0005C204 /* TopViewController.swift in Sources */,
+				AB01FABD261D8DF10005C204 /* NotificationCenterViewController.swift in Sources */,
+				AB01FAD5261D96D70005C204 /* RxSwiftViewController.swift in Sources */,
+				AB01FAE4261D9D610005C204 /* NotificationCenterModel.swift in Sources */,
 				AB01FAB9261D8DF10005C204 /* AppDelegate.swift in Sources */,
 				AB01FABB261D8DF10005C204 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,12 +210,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AB01FABE261D8DF10005C204 /* Main.storyboard */ = {
+		AB01FABE261D8DF10005C204 /* NotificationCenter.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AB01FABF261D8DF10005C204 /* Base */,
 			);
-			name = Main.storyboard;
+			name = NotificationCenter.storyboard;
 			sourceTree = "<group>";
 		};
 		AB01FAC3261D8DF70005C204 /* LaunchScreen.storyboard */ = {
