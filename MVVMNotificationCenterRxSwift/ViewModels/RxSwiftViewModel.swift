@@ -17,6 +17,7 @@ final class RxSwiftViewModel {
          passwordTextObservable: Observable<String?>,
          model: RxSwiftModelProtocol) {
         
+        //Viewからイベントを受け取り、Modelの処理を呼ぶ
         let event = Observable
             .combineLatest(idTextObservable, passwordTextObservable)
             .skip(1)
@@ -27,6 +28,8 @@ final class RxSwiftViewModel {
             }
             .share()
         
+        
+        //Viewからイベントを受け取り、加工して値を更新する
         self.validationText = event
             .flatMap { event -> Observable<String> in
                 switch event {
@@ -40,6 +43,7 @@ final class RxSwiftViewModel {
             }
             .startWith("IDとPasswordを入力してください。")
         
+        //Viewからイベントを受け取り、加工して値を更新する
         self.loadLabelColor = event
             .flatMap { event -> Observable<UIColor> in
                 switch event {

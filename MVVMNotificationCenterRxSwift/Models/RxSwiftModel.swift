@@ -8,12 +8,14 @@
 import RxSwift
 import RxCocoa
 
+//protocol化して疎結合に、テスタブルにする
 protocol RxSwiftModelProtocol {
     func validate(idText: String?, passwordText: String?) -> Observable<Void>
 }
 
 final class RxSwiftModel: RxSwiftModelProtocol {
     
+    //Observableを返却してViewModelと合成しやすくする
     func validate(idText: String?, passwordText: String?) -> Observable<Void> {
         switch (idText, passwordText) {
         case (.none, .none):
