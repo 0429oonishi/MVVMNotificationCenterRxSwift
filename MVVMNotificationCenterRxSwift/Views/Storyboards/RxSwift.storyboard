@@ -15,9 +15,47 @@
                     <view key="view" contentMode="scaleToFill" id="Pvy-bS-nEo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="m8r-vu-c5b">
+                                <rect key="frame" x="50" y="393" width="314" height="110"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSm-Tz-rcy">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="yAC-K6-hAB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wVv-S1-qZW">
+                                        <rect key="frame" x="0.0" y="70" width="314" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBq-aK-bUd">
+                                <rect key="frame" x="183" y="533" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="a0X-4a-MsP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m8r-vu-c5b" firstAttribute="centerY" secondItem="Pvy-bS-nEo" secondAttribute="centerY" id="V55-3J-YLb"/>
+                            <constraint firstItem="rBq-aK-bUd" firstAttribute="top" secondItem="m8r-vu-c5b" secondAttribute="bottom" constant="30" id="Y9X-AW-wIV"/>
+                            <constraint firstItem="rBq-aK-bUd" firstAttribute="centerX" secondItem="Pvy-bS-nEo" secondAttribute="centerX" id="YHC-yq-ZYd"/>
+                            <constraint firstItem="m8r-vu-c5b" firstAttribute="leading" secondItem="a0X-4a-MsP" secondAttribute="leading" constant="50" id="bXD-hV-973"/>
+                            <constraint firstItem="a0X-4a-MsP" firstAttribute="trailing" secondItem="m8r-vu-c5b" secondAttribute="trailing" constant="50" id="eOq-mZ-dyn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="idTextField" destination="bSm-Tz-rcy" id="fLp-YF-dIk"/>
+                        <outlet property="passwordTextField" destination="wVv-S1-qZW" id="Rrl-8M-d73"/>
+                        <outlet property="validationLabel" destination="rBq-aK-bUd" id="IJJ-B8-zZi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgN-6n-ySV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

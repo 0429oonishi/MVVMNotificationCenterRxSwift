@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="3xj-8y-EYU">
-                                <rect key="frame" x="50" y="358" width="314" height="180"/>
+                                <rect key="frame" x="50" y="393" width="314" height="110"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UfA-le-5FG">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
@@ -32,19 +32,21 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kos-g4-emN">
-                                        <rect key="frame" x="0.0" y="140" width="314" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDとPasswordを入力してください。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kos-g4-emN">
+                                <rect key="frame" x="43.5" y="533" width="327.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3xj-8y-EYU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="05K-GM-iOA"/>
+                            <constraint firstItem="kos-g4-emN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G9u-T0-t0w"/>
+                            <constraint firstItem="kos-g4-emN" firstAttribute="top" secondItem="3xj-8y-EYU" secondAttribute="bottom" constant="30" id="PXu-16-QKb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3xj-8y-EYU" secondAttribute="trailing" constant="50" id="S8e-Me-Epx"/>
                             <constraint firstItem="3xj-8y-EYU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="eS9-eZ-DcC"/>
                             <constraint firstItem="3xj-8y-EYU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qEx-Ei-s6a"/>

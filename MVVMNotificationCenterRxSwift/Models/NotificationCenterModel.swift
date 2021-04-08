@@ -1,26 +1,15 @@
 //
-//  NotificationCenterModel.swift
+//  Model.swift
 //  MVVMNotificationCenterRxSwift
 //
 //  Created by 大西玲音 on 2021/04/07.
 //
 
-enum Result<T> {
-    case success(T)
-    case failure(Error)
-}
-
-enum ModelError: Error {
-    case invalidId
-    case invalidPassword
-    case invalidIdAndPassword
-}
-
-protocol ModelProtocol {
+protocol NotificationCenterModelProtocol {
     func validate(idText: String?, passwordText: String?) -> Result<Void>
 }
 
-final class NotificationCenterModel: ModelProtocol {
+final class NotificationCenterModel: NotificationCenterModelProtocol {
     
     func validate(idText: String?, passwordText: String?) -> Result<Void> {
         switch (idText, passwordText) {

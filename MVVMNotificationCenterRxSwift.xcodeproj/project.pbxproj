@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,9 @@
 		AB01FAD9261D96ED0005C204 /* RxSwift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB01FAD8261D96ED0005C204 /* RxSwift.storyboard */; };
 		AB01FAE1261D9B0C0005C204 /* NotificationCenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01FAE0261D9B0C0005C204 /* NotificationCenterViewModel.swift */; };
 		AB01FAE4261D9D610005C204 /* NotificationCenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01FAE3261D9D610005C204 /* NotificationCenterModel.swift */; };
+		AB01FB32261EA6580005C204 /* RxSwiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01FB31261EA6580005C204 /* RxSwiftViewModel.swift */; };
+		AB01FB39261EA8E90005C204 /* RxSwiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01FB38261EA8E90005C204 /* RxSwiftModel.swift */; };
+		AB01FB3F261EACCA0005C204 /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB01FB3E261EACCA0005C204 /* ModelError.swift */; };
 		B30D62F7554C04629BC9D49C /* Pods_MVVMNotificationCenterRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2CC187B3F788DC7A20AAA8 /* Pods_MVVMNotificationCenterRxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,9 @@
 		AB01FAD8261D96ED0005C204 /* RxSwift.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RxSwift.storyboard; sourceTree = "<group>"; };
 		AB01FAE0261D9B0C0005C204 /* NotificationCenterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewModel.swift; sourceTree = "<group>"; };
 		AB01FAE3261D9D610005C204 /* NotificationCenterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterModel.swift; sourceTree = "<group>"; };
+		AB01FB31261EA6580005C204 /* RxSwiftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftViewModel.swift; sourceTree = "<group>"; };
+		AB01FB38261EA8E90005C204 /* RxSwiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftModel.swift; sourceTree = "<group>"; };
+		AB01FB3E261EACCA0005C204 /* ModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelError.swift; sourceTree = "<group>"; };
 		DA611DA972F5A5671011B512 /* Pods-MVVMNotificationCenterRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMNotificationCenterRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-MVVMNotificationCenterRxSwift/Pods-MVVMNotificationCenterRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +66,6 @@
 				DA611DA972F5A5671011B512 /* Pods-MVVMNotificationCenterRxSwift.debug.xcconfig */,
 				A3A786E7D78C40F05F444995 /* Pods-MVVMNotificationCenterRxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +90,7 @@
 		AB01FAB7261D8DF10005C204 /* MVVMNotificationCenterRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AB01FB3D261EACB90005C204 /* Enums */,
 				AB01FAE6261D9D6D0005C204 /* Models */,
 				AB01FADE261D97990005C204 /* ViewModels */,
 				AB01FADD261D97950005C204 /* Views */,
@@ -130,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				AB01FAE0261D9B0C0005C204 /* NotificationCenterViewModel.swift */,
+				AB01FB31261EA6580005C204 /* RxSwiftViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -138,8 +145,17 @@
 			isa = PBXGroup;
 			children = (
 				AB01FAE3261D9D610005C204 /* NotificationCenterModel.swift */,
+				AB01FB38261EA8E90005C204 /* RxSwiftModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AB01FB3D261EACB90005C204 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				AB01FB3E261EACCA0005C204 /* ModelError.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		E6E07B56AD6660DE6C711FA0 /* Frameworks */ = {
@@ -268,8 +284,11 @@
 			files = (
 				AB01FAE1261D9B0C0005C204 /* NotificationCenterViewModel.swift in Sources */,
 				AB01FAD2261D95DC0005C204 /* TopViewController.swift in Sources */,
+				AB01FB3F261EACCA0005C204 /* ModelError.swift in Sources */,
 				AB01FABD261D8DF10005C204 /* NotificationCenterViewController.swift in Sources */,
+				AB01FB39261EA8E90005C204 /* RxSwiftModel.swift in Sources */,
 				AB01FAD5261D96D70005C204 /* RxSwiftViewController.swift in Sources */,
+				AB01FB32261EA6580005C204 /* RxSwiftViewModel.swift in Sources */,
 				AB01FAE4261D9D610005C204 /* NotificationCenterModel.swift in Sources */,
 				AB01FAB9261D8DF10005C204 /* AppDelegate.swift in Sources */,
 				AB01FABB261D8DF10005C204 /* SceneDelegate.swift in Sources */,
